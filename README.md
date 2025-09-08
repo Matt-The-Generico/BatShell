@@ -27,28 +27,12 @@ BatShell is a lightweight, open-source, command-line shell written in Batch. It 
 
 Run BatShell.bat to start the shell.
 
-**Usage**
-
-Once inside BatShell, you can run commands directly. Some examples:
-
-
-help           # Displays all available commands
-
-sysinfo        # Shows detailed system information
-
-ls             # Lists files in the current directory
-
-ping google.com  # Pings google.com
-
-kill notepad.exe # Kills the Notepad process
-
-shutdown       # Shuts down the computer
 
 
 ## Command List
 
-### BatShell Core
 
+### BatShell Core
 
 Command | Description
 
