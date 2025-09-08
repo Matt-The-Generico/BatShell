@@ -19,11 +19,11 @@ BatShell is a lightweight, open-source, command-line shell written in Batch. It 
 
 1. Clone this repository:
    
-   ``git clone https://github.com/yourusername/BatShell.git``
+   ``git clone https://github.com/Matt-The-Generico/BatShell.git``
 
 2. Navigate to the project folder:
 
-``cd BatShell``
+   ``cd BatShell``
 
 Run BatShell.bat to start the shell.
 
