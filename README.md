@@ -80,7 +80,7 @@ battery	Shows battery status and charge percentage
 datetime	Displays the current date and time
 
 
-### File Management
+### File and Directory Management
 
 Command | Description
 
@@ -152,7 +152,7 @@ killpid [PID]	Kills a process by its Process ID (PID)
 services	Lists running services
 
 
-### Utilities
+### Utilities and Tool Commands
 
 Command | Description
 
