@@ -129,7 +129,7 @@ if /i "!command_lower!"=="search" (start "" "https://www.google.com/search?q=!ar
 
 :: --- If command is not found ---
 echo.
-echo '!'command_lower'!' is not recognized as a BatShell command.
+echo This command is not recognized as a BatShell command.
 echo For a list of commands, type 'help'.
 echo.
 goto :main_loop
@@ -247,3 +247,4 @@ echo Exiting BatShell. Goodbye!
 timeout /t 1 /nobreak > nul
 
 exit
+
