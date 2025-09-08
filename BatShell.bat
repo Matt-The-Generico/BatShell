@@ -19,7 +19,7 @@ echo  BBBBBB       SSSSSS                     BatShell v1.0
 echo  B     B    SSS             A custom and open-source command-line tool.
 echo  B      B  SS                  Type 'help' for a list of commands.
 echo  B    B      SS                        Type 'exit' to quit.
-echo  B   B         SS
+echo  B B B         SS
 echo  B    B          SS
 echo. B     B           S
 echo. BBBBBB    SSSSSSSS
@@ -71,7 +71,7 @@ if /i "!command_lower!"=="pcmodel" (wmic csproduct get name, vendor & goto :main
 if /i "!command_lower!"=="battery" (wmic path Win32_Battery get EstimatedChargeRemaining, BatteryStatus & goto :main_loop)
 if /i "!command_lower!"=="datetime" (echo %date% %time% & goto :main_loop)
 
-:: --- File & Directory Management ---
+:: --- File and Directory Management ---
 if /i "!command_lower!"=="ls" (dir !args! & goto :main_loop)
 if /i "!command_lower!"=="dir" (dir !args! & goto :main_loop)
 if /i "!command_lower!"=="cd" (cd /d !args! & goto :main_loop)
@@ -108,7 +108,7 @@ if /i "!command_lower!"=="kill" (taskkill /F /IM !args! & goto :main_loop)
 if /i "!command_lower!"=="killpid" (taskkill /F /PID !args! & goto :main_loop)
 if /i "!command_lower!"=="services" (net start & goto :main_loop)
 
-:: --- Utility & Tool Commands ---
+:: --- Utility and Tool Commands ---
 if /i "!command_lower!"=="calc" (start calc.exe & goto :main_loop)
 if /i "!command_lower!"=="notepad" (start notepad.exe !args! & goto :main_loop)
 if /i "!command_lower!"=="countdown" goto :cmd_countdown
@@ -245,4 +245,5 @@ goto :main_loop
 echo.
 echo Exiting BatShell. Goodbye!
 timeout /t 1 /nobreak > nul
+
 exit
