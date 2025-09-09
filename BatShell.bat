@@ -15,14 +15,15 @@ cls
 
 :: --- Welcome Message ---
 echo.
-echo  BBBBBB       SSSSSS                     BatShell v1.0
-echo  B     B    SSS             A custom and open-source command-line tool.
-echo  B      B  SS                  Type 'help' for a list of commands.
-echo  B    B      SS                        Type 'exit' to quit.
-echo  B B B         SS
-echo  B    B          SS
-echo. B     B           S
-echo. BBBBBB    SSSSSSSS
+echo  BBBBBB    SSSSSS      BatShell v1.0
+echo  B     B  S      S     A custom and open-source command-line tool.
+echo  B     B  S            Type 'help' for a list of commands.
+echo  BBBBBB    SSSSSS      Type 'exit' to quit.
+echo  B     B         S
+echo  B     B         S
+echo  B     B  S      S
+echo  BBBBBB    SSSSSS
+echo.
 
 :: #############################################################################
 :: #                               MAIN LOOP                                   #
@@ -247,4 +248,5 @@ echo Exiting BatShell. Goodbye!
 timeout /t 1 /nobreak > nul
 
 exit
+
 
