@@ -9,7 +9,7 @@ setlocal enabledelayedexpansion
 :: #############################################################################
 
 :: --- Initial Setup ---
-title BatShell v1.0
+title BatShell v1.1
 color 0B
 cls
 
@@ -53,8 +53,8 @@ if /i "!command_lower!"=="exit" goto :cmd_exit
 if /i "!command_lower!"=="quit" goto :cmd_exit
 if /i "!command_lower!"=="cls" (cls & goto :main_loop)
 if /i "!command_lower!"=="clear" (cls & goto :main_loop)
-if /i "!command_lower!"=="ver" (echo BatShell v1.0 & goto :main_loop)
-if /i "!command_lower!"=="version" (echo BatShell v1.0 & goto :main_loop)
+if /i "!command_lower!"=="ver" (echo BatShell v1.1 & goto :main_loop)
+if /i "!command_lower!"=="version" (echo BatShell v1.1 & goto :main_loop)
 if /i "!command_lower!"=="about" goto :cmd_about
 if /i "!command_lower!"=="reprompt" goto :main_loop
 
@@ -323,3 +323,4 @@ echo Exiting BatShell. Goodbye!
 powercfg /requestsoverride PROCESS "cmd.exe" System Display
 timeout /t 1 /nobreak > nul
 exit
+
