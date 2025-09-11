@@ -178,7 +178,9 @@ echo   reprompt             - Refreshes the command prompt
 echo.
 echo   --- System Information ---
 echo   sysinfo              - Displays detailed system information
-echo   hostname, username, os - Basic system/user info
+echo   hostname             - Shows computer hostname 
+echo   usename              - Shows current username
+echo   os                   - Shows OS info
 echo   cpuinfo, meminfo     - Shows CPU and RAM details
 echo   diskinfo, uptime     - Shows disk usage and system boot time
 echo   drivers, pcmodel     - Lists drivers and PC model
@@ -186,22 +188,27 @@ echo   battery, datetime    - Shows battery status and current date/time
 echo.
 echo   --- File and Directory Management ---
 echo   ls/dir [path]        - Lists files and directories
-echo   cd [path], pwd       - Change or print the current directory
+echo   cd [path], pwd       - Change and print the current directory
 echo   mkdir [name]         - Creates a new directory
 echo   touch/emptyfile [f]  - Creates a new empty file or empties an existing one
-echo   del/rm [f], rmdir [d] - Deletes a file or directory
-echo   copy/move/ren        - Standard file operations
+echo   del/rm [f]           - Deletes a file
+echo   rmdir [d] -          - Deletes a directory
+echo   copy [f]             - Copies a file
+echo   move [f] [d]         - Moves a file
+echo   rem/del [f]          - Deletes a file
 echo   cat/type [filename]  - Displays the content of a text file
 echo   tree [path]          - Displays a graphical directory tree
 echo   findfile [name]      - Searches for a file in subdirectories
 echo   countfiles           - Counts files in the current directory
 echo   countlines [file]    - Counts lines in a text file
 echo   open [file/url/app]  - Opens a file or URL with its default application
-echo   zip [arch] [f], unzip [arch] - Create or extract a zip archive (needs PowerShell)
+echo   zip [arch] [f]       - Creates a zip archive (needs PowerShell)
+echo   unzip [arch]         - Extracts a zip archive (needs PowerShell)
 echo.
 echo   --- Networking ---
 echo   ip, ipall            - Shows basic or all IP configuration
-echo   ping [host], trace [host] - Test connectivity or trace route
+echo   ping [host]          - Tests connectivity
+echo   trace [host]         - Traces route
 echo   dnsflush             - Flushes the DNS resolver cache
 echo   netstat, arp, mac    - Display network connections, ARP cache, or MAC address
 echo   lookup [host]        - Performs a DNS lookup
@@ -210,7 +217,8 @@ echo   wifipass [profile]   - Shows the saved password for a Wi-Fi profile
 echo.
 echo   --- Process Management ---
 echo   ps/tasklist          - Lists all running processes
-echo   kill [name.exe], killpid [PID] - Kills a process by name or PID
+echo   kill [name.exe]      - Kills a process by name
+echo   kill [PID]           - Kills a process by PID
 echo   services             - Lists running services
 echo.
 echo   --- Developer Tools (Requires external programs in PATH) ---
@@ -235,7 +243,8 @@ echo   shutdown/reboot      - Shuts down or reboots the computer
 echo   logoff, lock         - Logs off the user or locks the computer
 echo   caffeinate           - Prevents the system from sleeping while BatShell is open
 echo   random, path, env    - Shows a random number, the PATH, or all env variables
-echo   color [attr], title [text] - Change console color or title
+echo   color [attr]         - Changes console color
+echo   title [text]         - Changes the BatShell window title
 echo.
 echo ==============================================================================================
 echo.
@@ -323,4 +332,5 @@ echo Exiting BatShell. Goodbye!
 powercfg /requestsoverride PROCESS "cmd.exe" System Display
 timeout /t 1 /nobreak > nul
 exit
+
 
