@@ -1,194 +1,200 @@
-# BatShell
+# BatShell v1.1
 
-BatShell is a lightweight, open-source, command-line shell written in Batch. It provides a wide range of system, file, networking, and utility commands to interact with your Windows environment directly from the terminal.
+### BatShell is a custom, open-source command-line interpreter for Windows, written entirely in Batch.
+### It extends the traditional Windows Command Prompt with dozens of built-in commands for system info, file management, networking, development, and utilities.
 
----
+✨ Features
 
-## Features
+🖥️ System info commands (CPU, RAM, uptime, drivers, battery, etc.)
 
-- **Core shell commands**: help, exit/quit, clear screen, version info, reprompt
-- **System information**: CPU, RAM, disk, OS, battery, drivers, uptime, hostname, username
-- **File management**: navigation, creation, deletion, copying, moving, listing files & directories
-- **Networking tools**: IP info, ping, traceroute, DNS lookup, ARP, MAC address
-- **Process management**: list processes, kill by name or PID, list services
-- **Utilities**: calculator, notepad, countdown timer, echo messages, shutdown/reboot, random numbers, console customization, Google search
+📂 File & directory management (including touch, zip/unzip, countlines)
 
----
+🌐 Networking tools (ip, ping, wifipass, netstat, lookup, etc.)
 
-## Installation
+⚙️ Process & service management (ps, kill, services)
 
-1. Clone this repository:
-   
-   ``git clone https://github.com/Matt-The-Generico/BatShell.git``
+👨‍💻 Developer-friendly extras (python, pip, git, curl, uuidgen, b64encode)
 
-2. Navigate to the project folder:
+🛠️ Utilities like weather, qrcode, caffeinate, calc, and more
 
-   ``cd BatShell``
+Lightweight, portable, and runs out of the box on Windows (no installer needed)
 
-Run BatShell.bat to start the shell.
+🚀 Installation
 
+Clone the repository using Git:
 
+``git clone https://github.com/Matt-The-Generico/BatShell.git``
 
-## Command List
 
+Navigate to the project folder:
 
-### BatShell Core
+``cd BatShell``
 
-Command | Description
 
+Run BatShell:
 
-help	Shows help message
+``BatShell.bat``
 
-exit / quit	Exits BatShell
 
-cls / clear	Clears the screen
+(Optional): Add the folder to your system PATH to call BatShell from anywhere.
 
-ver / version	Displays BatShell version
+📖 Commands
 
-about	Information about BatShell
+Here’s the full list of commands available in v1.1:
 
-reprompt	Refreshes the command prompt
+<details> <summary>▶ BatShell Core</summary>
 
+help – Shows help message
 
-### System Information
+exit / quit – Exits BatShell
 
-Command | Description
+cls / clear – Clears the screen
 
+ver / version – Displays BatShell version
 
-sysinfo	Displays detailed system information
+about – Information about BatShell
 
-hostname	Shows the computer name
+reprompt – Refreshes the command prompt
 
-username	Shows the current user's name
+</details> <details> <summary>▶ System Information</summary>
 
-os	Displays the Windows version
+sysinfo – Detailed system information
 
-cpuinfo	Shows detailed CPU information
+hostname, username, os – Basic info
 
-meminfo	Shows total and free RAM
+cpuinfo, meminfo – CPU and RAM details
 
-diskinfo	Lists disk drives with size and free space
+diskinfo, uptime – Disk usage and boot time
 
-uptime	Shows system boot time
+drivers, pcmodel – Drivers and PC model
 
-drivers	Lists all installed device drivers
+battery, datetime – Battery and date/time
 
-pcmodel	Shows PC manufacturer and model
+</details> <details> <summary>▶ File & Directory Management</summary>
 
-battery	Shows battery status and charge percentage
+ls / dir [path] – List files and directories
 
-datetime	Displays the current date and time
+cd [path], pwd – Change/print directory
 
+mkdir [name] – Create directory
 
-### File and Directory Management
+touch / emptyfile [file] – Create or empty file
 
-Command | Description
+del / rm [f], rmdir [d] – Delete file/dir
 
+copy, move, ren – File operations
 
-ls / dir [path]	Lists files and directories
+cat / type [file] – Show file content
 
-cd [path]	Changes the current directory
+tree [path] – Directory tree
 
-pwd	Prints the working (current) directory
+findfile [name] – Search file recursively
 
-mkdir [name]	Creates a new directory
+countfiles – Count files in directory
 
-touch [filename]	Creates a new empty file
+countlines [file] – Count lines in file
 
-del / rm [filename]	Deletes a file
+open [file/url/app] – Open with default app
 
-rmdir [name]	Removes an empty directory
+zip [arch] [files], unzip [arch] – Zip/unzip (PowerShell required)
 
-copy [src] [dest]	Copies a file
+</details> <details> <summary>▶ Networking</summary>
 
-move [src] [dest]	Moves or renames a file/directory
+ip, ipall – Show IP configuration
 
-ren [old] [new]	Renames a file
+ping [host], trace [host] – Connectivity/route
 
-cat / type [filename]	Displays the content of a text file
+dnsflush – Flush DNS cache
 
-tree [path]	Displays a graphical directory tree
+netstat, arp, mac – Network details
 
-findfile [name]	Searches for a file in the current dir and subdirs
+lookup [host] – DNS lookup
 
-countfiles	Counts files in the current directory
+wifilist – List saved Wi-Fi profiles
 
+wifipass [profile] – Show Wi-Fi password
 
-### Networking
+</details> <details> <summary>▶ Process Management</summary>
 
-Command | Description
+ps / tasklist – List processes
 
+kill [name.exe], killpid [PID] – Kill process
 
-ip	Shows your local IPv4 address
+services – List running services
 
-ipall	Shows all IP configuration details
+</details> <details> <summary>▶ Developer Tools</summary>
 
-ping [host]	Pings a host to check connectivity
+py / python [script] – Run Python script
 
-trace [host]	Traces the route to a host
+pinstall [pkg] – Install Python package
 
-dnsflush	Flushes the DNS resolver cache
+puninstall [pkg] – Uninstall Python package
 
-netstat	Displays active network connections
+plist – List installed Python packages
 
-lookup [host]	Performs a DNS lookup for a host
+git [args] – Run Git command
 
-mac	Displays the MAC address of network adapters
+curl [args] – Run curl command
 
-arp	Displays the ARP cache
+which [cmd] – Show path of executable
 
+uuidgen – Generate GUID
 
-### Process Management
+b64encode [str], b64decode [str] – Base64 encode/decode
 
-Command | Description
+</details> <details> <summary>▶ Utilities & Tools</summary>
 
+calc – Open Calculator
 
-ps / tasklist	Lists all running processes
+notepad [file] – Open Notepad
 
-kill [name.exe]	Kills a process by its name
+countdown / timer [s] – Countdown timer
 
-killpid [PID]	Kills a process by its Process ID (PID)
+search [query] – Google search
 
-services	Lists running services
+weather [loc] – Show weather (e.g., weather London)
 
+qrcode [text] – Generate QR code in console
 
-### Utilities and Tool Commands
+shutdown / reboot – Power controls
 
-Command | Description
+logoff, lock – Session controls
 
+caffeinate – Prevent system sleep
 
-calc	Opens the Windows Calculator
+random – Random number
 
-notepad [file]	Opens Notepad (optionally with a file)
+path – Show PATH
 
-countdown / timer [s]	Starts a countdown for 's' seconds
+env – Show environment variables
 
-date / time	Displays the current date or time
+color [attr], title [text] – Customize console
 
-echo [message]	Displays a message on the screen
+</details>
+📌 Requirements
 
-shutdown / reboot	Shuts down or reboots the computer
+Windows 7/8/10/11
 
-logoff	Logs the current user off
+PowerShell
+(for zip, unzip, weather, qrcode)
 
-lock	Locks the computer
+Optional: Python, Git, Curl (for developer tools)
 
-random	Generates a random number
+🤝 Contributing
 
-path	Displays the system PATH variable
+Contributions are welcome!
+If you’d like to add new commands, improve existing ones, or fix bugs:
 
-env	Displays all environment variables
+Fork this repo
 
-color [attr]	Changes the console text color (e.g., color 0A)
+Create a feature branch (git checkout -b feature/new-command)
 
-title [text]	Changes the console window title
+Commit your changes (git commit -m "Added new feature")
 
-search [query]	Searches Google for the query in your browser
+Push and open a PR
 
 
-# Contributing
+You’re free to use, modify, and distribute it, just give credit.
 
-Contributions are welcome! Feel free to submit issues or pull requests.
 
-
-## Made with ❤️ using Batch.
+⚡ BatShell v1.1 - Bringing power to your Windows terminal, one command at a time! ⚡
