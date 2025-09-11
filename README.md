@@ -225,4 +225,4 @@ Push and open a PR
 You’re free to use, modify, and distribute it, just give credit.
 
 
-⚡ BatShell v1.1 - Bringing power to your Windows terminal, one command at a time! ⚡
+⚡ BatShell v1.1 - Bringing power to your Windows terminal! ⚡
