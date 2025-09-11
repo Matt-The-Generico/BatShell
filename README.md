@@ -60,29 +60,49 @@ reprompt – Refreshes the command prompt
 
 sysinfo – Detailed system information
 
-hostname, username, os – Basic info
+hostname - Shows the computer hostname
+
+username - Shows the computer username
+
+os – Shows OS info
 
 cpuinfo, meminfo – CPU and RAM details
 
-diskinfo, uptime – Disk usage and boot time
+diskinfo - Shows disk usage
 
-drivers, pcmodel – Drivers and PC model
+uptime – Shows boot time
 
-battery, datetime – Battery and date/time
+drivers - Shows installed drivers
+
+pcmodel – Shows PC model
+
+battery - Shows battery
+
+datetime – Shows date/time
 
 </details> <details> <summary>▶ File & Directory Management</summary>
 
-ls / dir [path] – List files and directories
+ls - List files in the current directory
 
-cd [path], pwd – Change/print directory
+dir [path] – Shows directories
+
+cd [path] – Change directory
+
+pwd - print directory
 
 mkdir [name] – Create directory
 
-touch / emptyfile [file] – Create or empty file
+touch / emptyfile [file] – Create empty file
 
-del / rm [f], rmdir [d] – Delete file/dir
+del / rm [f] – Delete file
 
-copy, move, ren – File operations
+rmdir [d] - Delete directory
+
+copy - Copy file
+
+move - Move file
+
+ren – Rename file
 
 cat / type [file] – Show file content
 
@@ -96,17 +116,25 @@ countlines [file] – Count lines in file
 
 open [file/url/app] – Open with default app
 
-zip [arch] [files], unzip [arch] – Zip/unzip (PowerShell required)
+zip [arch] [files] - Zip files (PowerShell Required)
+
+unzip [arch] – Unzip files (PowerShell Required)
 
 </details> <details> <summary>▶ Networking</summary>
 
-ip, ipall – Show IP configuration
+ip - Shows current IPs
 
-ping [host], trace [host] – Connectivity/route
+ipall - Shows all IP configuration
+
+ping [host],  – Tests host connectivity
+
+trace [host] - Traces host route
 
 dnsflush – Flush DNS cache
 
-netstat, arp, mac – Network details
+netstat - Shows connection status
+
+arp, mac – Network details (ARP and MAC adress)
 
 lookup [host] – DNS lookup
 
@@ -124,7 +152,7 @@ services – List running services
 
 </details> <details> <summary>▶ Developer Tools</summary>
 
-py / python [script] – Run Python script
+py / python [script/file] – Run Python script or file
 
 pinstall [pkg] – Install Python package
 
@@ -156,19 +184,19 @@ weather [loc] – Show weather (e.g., weather London)
 
 qrcode [text] – Generate QR code in console
 
-shutdown / reboot – Power controls
+shutdown / reboot – Power controls (shuts down or reboot computer)
 
-logoff, lock – Session controls
+logoff, lock – Session controls (logoffs user or lock computer)
 
 caffeinate – Prevent system sleep
 
-random – Random number
+random – Generates random number
 
 path – Show PATH
 
 env – Show environment variables
 
-color [attr], title [text] – Customize console
+color [attr], title [text] – Customize console (window color or title)
 
 </details>
 📌 Requirements
