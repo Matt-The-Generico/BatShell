@@ -237,8 +237,8 @@ echo   --- Utilities and Tools ---
 echo   calc, notepad [file] - Opens Calculator or Notepad
 echo   countdown/timer [s]  - Starts a countdown for 's' seconds
 echo   search [query]       - Searches Google for the query in your browser
-echo   weather [location]   - Shows the weather for a location (e.g., 'weather London')
-echo   qrcode [text]        - Generates a QR code in the console
+echo   weather [location]   - Shows the weather for a location (e.g., 'weather London'), needs PowerShell
+echo   qrcode [text]        - Generates a QR code in the console (needs PowerShell)
 echo   shutdown/reboot      - Shuts down or reboots the computer
 echo   logoff, lock         - Logs off the user or locks the computer
 echo   caffeinate           - Prevents the system from sleeping while BatShell is open
@@ -332,5 +332,6 @@ echo Exiting BatShell. Goodbye!
 powercfg /requestsoverride PROCESS "cmd.exe" System Display
 timeout /t 1 /nobreak > nul
 exit
+
 
 
